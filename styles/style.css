@@ -7,32 +7,278 @@
 /* You should reset this file  before coding any stuff dear */
 
 body{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
-button{
-    height: 40px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    align-self: center;
+/* This is the navbar of the page */
+
+.left-nav{
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
     border: none;
-    outline: none;
-    border-radius: 5px;
-    background: rgba(22, 23, 49);
-    color: #fff;
-    font-weight: bold;
-    transition: .5s ease-in-out;
+    box-shadow: 0px 0px 10px;
+}
+
+.logo{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.user-info ul li{
+    list-style: none;
+    margin: 15px;
+    display: flex;
     cursor: pointer;
 }
 
-button:hover{
-    border: 1px solid rgba(22, 23, 49);
-    color: rgba(22, 23, 49);
-    background: transparent;
+.user-info ul li img{
+    display: flex;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    color: #000;
 }
 
-p{
-    font-family: 'poppins';
-    font-weight: 600;
+.user-info ul{
+    gap: 20px;
+}
+
+.user-info ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* This is the skill of the page */
+
+.skills{
+    flex: 1;
+    width: 1300px;
+    background: rgb(223, 232, 236);
+    box-shadow: 0px 0px 10px;
+    margin-left: 10px;
+}
+.holder{
+    display: block;
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    display: flex;
+}
+
+.container .content{
+    width: 440px;
+    height: 255px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    cursor: pointer;
+    margin: 35px;
+    text-align: center;
+}
+
+.content img{
+    display: block;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.content p{
+    font-weight: bold;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.content .option{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.content button{
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: orangered;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.content button:hover{
+    background: transparent;
+    border: 2px solid orangered;
+    font-weight: bold;
+    color: orangered;
+    box-shadow: 0px 0px 10px orangered;
+}
+
+/* This is the course of the page */
+
+.courses{
+    display: block;
+    flex: 0;
+}
+
+.courses .container p{
+    margin-right: 280px;
+    margin-top: 25px;
+}
+
+.courses .container .content{
+    width: 440px;
+    height: 255px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    cursor: pointer;
+    margin: 35px;
+    text-align: center;
+}
+
+.courses .container .option{
+    margin-right: 280px;
+}
+
+.courses .container button{
+    margin-right: 320px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(22, 23, 49);
+}
+
+.courses .container .content img{
+    display: block;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.courses .container .content{
+    display: flex;
+}
+
+.courses .container .content .hover{
+    width: 225px;
+    margin: 25px;
+}
+
+.courses .container .content .img img{
+    width: 125px;
+    margin-top: 50px;
+    height: 125px;
+}
+
+.logout{
+    font-size: 15px;
+}
+
+.logout img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: rgba(102, 101, 101, 0.097);
+    gap: 25px;
+    flex-wrap: nowrap;
+    margin: 15px;
+    margin-top: 15px;
+}
+
+.progress .level{
+    margin-left: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.progress .level .underline{
+    width: 60px;
+    height: 6px;
+    background: rgb(164, 165, 167);
+    align-self: center;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.second{
+    display: flex;
+    right: 40px;
+}
+
+.second img{
+    width: 150px;
+    height: 150px;
 }
