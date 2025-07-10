@@ -329,4 +329,8 @@ body{
         overflow-x: auto;
         white-space: nowrap;
     }
+
+    .progress .level{
+        font-size: 15px;
+    }
 }
