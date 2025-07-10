@@ -324,4 +324,9 @@ body{
     .courses{
         margin-top: 300px;
     }
+
+    .contents, .holder{
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
