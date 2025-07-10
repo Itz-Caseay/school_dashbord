@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="show">Show</button>
+    <div id="container" style="display: none; border: 1px solid red;">
+        its hidden
+    </div>
+
+    <script>
+        document.getElementById('show').addEventListener('click', function() {
+            document.getElementById('container').style.display = 'block';
+        });
+
+        document.getElementById('container').addEventListener('click', function(){
+            document.getElementById('container').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

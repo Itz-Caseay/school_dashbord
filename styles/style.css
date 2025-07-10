@@ -1,284 +1,327 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* You should reset this file  before coding any stuff dear */
-
 body{
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
     width: 100vw;
-    height: 100vh;
-    flex-wrap: nowrap;
-    overflow: hidden;
+    position: fixed;
 }
 
-/* This is the navbar of the page */
+/* navbar ection */
 
 .left-nav{
-    width: 250px;
+    width: 15%;
     height: 100vh;
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    border: none;
-    box-shadow: 0px 0px 10px;
+    background: rgb(22, 23, 49);
+    color: #fff;
 }
 
-.logo{
+.left-nav .logo{
     width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
 }
 
-.logo h1{
-    font-size: 24px;
+.left-nav .logo img{
+    width: 100px;
+    height: 40px;
     margin: 10px;
 }
 
-.user-info ul li{
-    list-style: none;
-    margin: 15px;
-    display: flex;
-    cursor: pointer;
+.left-nav .links{
+    margin: 10px;
+    color: #fff;
+    margin-top: 40px;
 }
 
-.user-info ul li img{
-    display: flex;
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
-    color: #000;
-}
-
-.user-info ul{
+.left-nav .links ul{
     gap: 20px;
+    list-style: none;
 }
 
-.user-info ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    display: flex;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-/* This is the skill of the page */
-
-.skills{
-    flex: 1;
-    width: 1300px;
-    background: rgb(223, 232, 236);
-    box-shadow: 0px 0px 10px;
-    margin-left: 10px;
-}
-.holder{
-    display: block;
-}
-
-.title{
-    width: 100%;
-    height: 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 20px;
-    padding: 20px;
-    font-size: 30px;
-}
-
-.container{
-    width: 100%;
-    height: 400px;
-    background: transparent;
-    display: flex;
-}
-
-.container .content{
-    width: 440px;
-    height: 255px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px;
+.left-nav .links ul li {
     cursor: pointer;
-    margin: 35px;
+    margin: 30px;
+}
+
+.left-nav .links ul li:hover{
+    color: skyblue;
+    transition: .5s ease-in-out;
+}
+
+.left-nav .links ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.left-nav .links ul li a:hover{
+    color: skyblue;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+}
+
+.left-nav .links ul .logout{
+    margin-top: 225px;
+}
+
+/* skill section */
+
+.contains{
+    width: 85%;
+    background: rgb(205, 206, 250);
+}
+
+.contains .skills{
+    width: 100%;
+    height: 60px;
+    color: #000;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.contains .skills .title{
+    margin: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.contains .skills span{
+    display: none;
+}
+
+.contains .skills .contents{
+    display: flex;
     text-align: center;
 }
 
-.content img{
-    display: block;
+.contains .skills .contents .domain{
+    width: 300px;
+    height: 180px;
+    background: #fff;
     margin: 20px;
-    width: 50px;
-    height: 50px;
-    align-self: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    margin-left: 20px;
+    text-align: center;
 }
 
-.content p{
-    font-weight: bold;
-    font-family: serif;
-    font-size: 30px;
-}
-
-.content .option{
-    font-size: 15px;
+.contains .skills .contents .domain img{
+    width: 35px;
+    height: 35px;
     margin: 10px;
 }
 
-.content button{
-    width: 200px;
-    height: 50px;
+.contains .skills .contents .domain p{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: serif;
+}
+
+.contains .skills .contents .domain span{
+    font-weight: lighter;
+    display: block;
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.contains .skills .contents .domain button{
+    width: 110px;
+    height: 30px;
     margin: 25px;
-    border-radius: 15px;
+    display: block;
+    align-self: center;
     border: none;
     outline: none;
+    background: #454555;
     color: #fff;
-    background: orangered;
+    border-radius: 5px;
+    font-weight: lighter;
+    transition: .5s ease-in-out;
+}
+
+.contains .skills .contents .domain button:hover{
+    border: 2px solid #454555;
+    background: transparent;
+    color: #454555;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* courses section */
+
+.courses{
+    width: 100%;
+    margin: 20px;
+    margin-top: 200px;
+}
+
+.courses .title{
+    font-size: 22px;
+    margin-right: 22px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.courses .progress{
+    display: flex;
+    gap: 20px;
+}
+
+.courses .progress .level{
+    color: #454555;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.courses .progress .level:hover{
+    color: #fff;
+}
+
+.courses .progress .level .underline{
+    width: 60px;
+    height: 3px;
+    background: #454555;
+    display: block;
+    border-radius: 50px;
+    margin-left: 5px;
     cursor: pointer;
     transition: .5s ease-in-out;
 }
 
-.content button:hover{
-    background: transparent;
-    border: 2px solid orangered;
-    font-weight: bold;
-    color: orangered;
-    box-shadow: 0px 0px 10px orangered;
-}
-
-/* This is the course of the page */
-
-.courses{
-    display: block;
-    flex: 0;
-}
-
-.courses .container p{
-    margin-right: 280px;
-    margin-top: 25px;
-}
-
-.courses .container .content{
-    width: 440px;
-    height: 255px;
+.courses .progress .level .underline:hover{
     background: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px;
-    cursor: pointer;
-    margin: 35px;
+    transition: .5s ease-in-out;
+}
+
+.courses .holder{
+    width: 96%;
+    height: 250px;
+    display: flex;
+    background: transparent;
     text-align: center;
+    align-items: center;
 }
 
-.courses .container .option{
-    margin-right: 280px;
-}
-
-.courses .container button{
-    margin-right: 320px;
-    width: 100px;
-    height: 40px;
+.courses .holder .lang{
+    width: 340px;
+    height: 200px;
+    background: #fff;
+    margin: 15px;
+    margin-right: 10px;
     border-radius: 10px;
-    background: rgb(22, 23, 49);
-}
-
-.courses .container .content img{
-    display: block;
-    margin: 20px;
-    width: 50px;
-    height: 50px;
-    align-self: center;
-}
-
-.courses .container .content{
+    box-shadow: 0px 0px 10px;
     display: flex;
 }
 
-.courses .container .content .hover{
-    width: 225px;
-    margin: 25px;
+.courses .holder .lang .first{
+    width: 50%;
+    height: 100%;
+    justify-content: left;
 }
 
-.courses .container .content .img img{
-    width: 125px;
-    margin-top: 50px;
-    height: 125px;
+.courses .holder .lang .first h2{
+    margin: 10px;
+    margin-right: 85px;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.logout{
+.courses .holder .lang .first p{
+    margin: 10px;
     font-size: 15px;
+    font-weight: lighter;
+    right: 10px;
+    color: #454555;
+    margin-right: 50px;
 }
 
-.logout img{
-    width: 25px;
-    height: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.progress{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background: rgba(102, 101, 101, 0.097);
-    gap: 25px;
-    flex-wrap: nowrap;
-    margin: 15px;
-    margin-top: 15px;
-}
-
-.progress .level{
-    margin-left: 20px;
-    font-family: sans-serif;
+.courses .holder .lang .first button{
+    margin-right: 70px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(22, 23, 49);
+    margin-top: 50px;
     cursor: pointer;
-    margin: 15px;
 }
 
-.progress .level .underline{
-    width: 60px;
-    height: 6px;
-    background: rgb(164, 165, 167);
+.courses .holder .lang .first button:hover{
+    background: transparent;
+    border: 2px solid rgb(22, 23, 49);
+    color: rgb(22, 23, 49);
+    transition: .5s ease-in-out;
+    font-weight: bold;
+}
+
+.courses .holder .lang .second{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.courses .holder .lang .second img{
+    width: 120px;
+    height: 120px;
     align-self: center;
+    margin: 15px;
+    margin-top: 40px;
     margin-left: 10px;
-    border-radius: 50px;
 }
 
-.second{
-    display: flex;
-    right: 40px;
-}
+@media(max-width: 720px) {
+    body{
+        display: block;
+    }
 
-.second img{
-    width: 150px;
-    height: 150px;
+    .left-nav{
+        width: 180px;
+    }
+
+    .contains{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contains .skills .title .menu{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 80px;
+    }
+
+    .contains .skills .title .menu span{
+        width: 40px;
+        display: block;
+        height: 4px;
+        background: rgb(22, 23, 49);
+        margin-top: 5px;
+    }
+
+    .contains .skills .contents .domain{
+        padding: 25px;
+        height: 250px;
+    }
+
+    .courses{
+        margin-top: 300px;
+    }
 }

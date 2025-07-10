@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiC Summit | Dashboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/tic_logo.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- navbar section -->
+    <div id="navLinks" class="left-nav">
+        <div class="logo"><img src="assets/tic_logo.svg" alt="school logo"></div>
+        <div class="links">
+            <ul>
+                <li><i class="bi bi-house"></i><a href="#">Home</a></li>
+                <li><i class="bi bi-person-circle"></i><a href="#">Profile</a></li>
+                <li><i class="bi bi-wallet2"></i><a href="#">Wallet</a></li>
+                <li><i class="bi bi-graph-down"></i><a href="#">Analytics</a></li>
+                <li><i class="bi bi-list-task"></i><a href="#">Tasks</a></li>
+                <li><i class="bi bi-gear"></i><a href="#">Settings</a></li>
+                <li><i class="bi bi-info-circle-fill"></i><a href="#">Help</a></li>
+                <li class="logout"><i class="bi bi-box-arrow-right"></i><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- end of navbar section -->
+
+    <!-- contain section -->
+
+        <div class="contains">
+
+            <!-- skill section -->
+
+            <div class="skills">
+                <div class="title">Skills <div class="menu" id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div></div>
+
+                <div class="contents">
+                    <div class="domain">
+                        <img src="assets/laptop.svg" alt="">
+                        <p>Web Development</p>
+                        <span>Join Over 1 million students</span>
+                        <center><button onclick="date()">Get Started</button></center>
+                    </div>
+
+                    <div class="domain">
+                        <img src="assets/wordpress.svg" alt="">
+                        <p>WordPress</p>
+                        <span>Join Over 3 million students</span>
+                        <center><button onclick="date()">Get Started</button></center>
+                    </div>
+
+                    <div class="domain">
+                        <img src="assets/graphic.svg" alt="">
+                        <p>Graphic Design</p>
+                        <span>Join Over 2 million students</span>
+                        <center><button onclick="date()">Get Started</button></center>
+                    </div>
+
+                    <div class="domain">
+                        <img src="assets/ios.svg" alt="">
+                        <p>IOS Dev</p>
+                        <span>Join Over 1 million students</span>
+                        <center><button onclick="date()">Get Started</button></center>
+                    </div>
+                </div>
+            </div>
+
+            <!-- skill section -->
+
+            <div class="courses">
+                <div class="title">My Courses</div>
+                <div class="progress">
+                    <div class="level">
+                        In Progress
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="level">
+                        Explore
+                    </div>
+
+                    <div class="level">
+                        incoming
+                    </div>
+
+                    <div class="level">
+                        Finished
+                    </div>
+                </div>
+                <div class="holder">
+                    <div class="lang">
+                        <div class="first">
+                            <h2>HTML</h2>
+                            <p>80% - Progress</p>
+                            <button onclick="date()">continue</button>
+                        </div>
+                        <div class="second">
+                            <img src="assets/html.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="lang">
+                        <div class="first">
+                            <h2>CSS</h2>
+                            <p>50% - Progress</p>
+                            <button onclick="date()">continue</button>
+                        </div>
+                        <div class="second">
+                            <img src="assets/css.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="lang">
+                        <div class="first">
+                            <h2>JavaScript</h2>
+                            <p>30% - Progress</p>
+                            <button onclick="date()">continue</button>
+                        </div>
+                        <div class="second">
+                            <img src="assets/javascript.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-- end of contain section -->
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
